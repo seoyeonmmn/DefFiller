@@ -1,5 +1,5 @@
 # DefFiller
-This is the repository for _Mask-conditioned Generation with Diffusion Prior for Saliency-based Steel Surface Defect Detection_
+This is the repository for _Mask-conditioned Generation with Diffusion Prior for Saliency-based Steel Surface Defect Detection.
 
 The source code will be released soon.
 
