@@ -4,7 +4,7 @@ This is the repository for "DefFiller: Mask-Conditioned Diffusion for Salient St
 ## Dataset
 1. Download [SD-saliency-900](https://drive.google.com/file/d/1yQdfow1-WvDilQTZ1zj1EbbErN1DksVF/view?usp=sharing)
 2. Place the masks in the directory "./DATA/SD-saliency-900/Ground_truth" and the images in "./DATA/SD-saliency-900/Source_Images".
-3. Generate a "caption.json" file for the dataset by referring to "./DATA/process_json.py".
+3. Generate a "caption.json" file for the dataset by referring to "process_json.py".
 
 ## Env Install
 We follow [GLIGEN](https://github.com/gligen/GLIGEN).
