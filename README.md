@@ -1,5 +1,6 @@
 # DefFiller
 This is the repository for "DefFiller: Mask-Conditioned Diffusion for Salient Steel Surface Defect Generation".
+![input-output](https://github.com/CC-T/DefFiller/blob/main/assets/input-output.jpg)
 
 ## Dataset
 1. Download [SD-saliency-900](https://drive.google.com/file/d/1yQdfow1-WvDilQTZ1zj1EbbErN1DksVF/view?usp=sharing)
