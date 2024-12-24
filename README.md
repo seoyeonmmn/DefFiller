@@ -1,6 +1,6 @@
 # DefFiller
-This is the repository for "DefFiller: Mask-Conditioned Diffusion for Salient Steel Surface Defect Generation".
-[ArXiv Link](https://arxiv.org/abs/2412.15570)
+This is the repository for "DefFiller: Mask-Conditioned Diffusion for Salient Steel Surface Defect Generation".  
+[arXiv Link](https://arxiv.org/abs/2412.15570)
 ![input-output](https://github.com/CC-T/DefFiller/blob/main/assets/input-output.jpg)
 
 ## Dataset
