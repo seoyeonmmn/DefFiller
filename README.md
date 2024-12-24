@@ -26,4 +26,19 @@ The experiment will be saved in “OUTPUT_ROOT/name”.
 ```
 Example samples for each checkpoint will be saved in “generation_samples”.
 
+## Acknowledgements
+This repo is mainly inspired by [GLIGEN](https://github.com/gligen/GLIGEN). We thank the authors a lot for their valuable efforts.
 
+## Citation
+Please consider citing our paper in your publications if the project helps your research. BibTeX reference is as follows.
+```
+   @misc{tai2024deffillermaskconditioneddiffusionsalient,
+      title={DefFiller: Mask-Conditioned Diffusion for Salient Steel Surface Defect Generation}, 
+      author={Yichun Tai and Zhenzhen Huang and Tao Peng and Zhijiang Zhang},
+      year={2024},
+      eprint={2412.15570},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.15570}, 
+}
+```
