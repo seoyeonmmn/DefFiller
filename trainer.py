@@ -185,7 +185,7 @@ class Trainer:
 
         
         # state_dict = read_official_ckpt(  os.path.join(config.DATA_ROOT, config.official_ckpt_name)   )
-        state_dict = read_official_ckpt('/data/zhiyuan/code/Dreambooth/stable-diffusion-v-1-4-original/sd-v1-4.ckpt')
+        state_dict = read_official_ckpt('/mnt/aix24709/data/sd-v1-4.ckpt')
 
         # modify the input conv for SD if necessary (grounding as unet input; inpaint)
         additional_channels = self.model.additional_channel_from_downsampler

@@ -14,13 +14,13 @@ if __name__ == "__main__":
     multiprocessing.set_start_method('spawn')
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--DATA_ROOT", type=str,  default="./DATA/SD-saliency-900", help="path to DATA")
-    parser.add_argument("--OUTPUT_ROOT", type=str,  default="OUTPUT", help="path to OUTPUT")
+    parser.add_argument("--DATA_ROOT", type=str,  default="/mnt/aix24709/data/DefFiller", help="path to DATA")
+    parser.add_argument("--OUTPUT_ROOT", type=str,  default="/mnt/aix24709/data/DefFiller/OUTPUT", help="path to OUTPUT")
 
     parser.add_argument("--name", type=str,  default="sd", help="experiment will be stored in OUTPUT_ROOT/name")
     parser.add_argument("--seed", type=int,  default=123, help="used in sampler")
     parser.add_argument("--local_rank", type=int, default=0)
-    parser.add_argument("--yaml_file", type=str,  default="configs/sd_saliency_900.yaml", help="paths to base configs.")
+    parser.add_argument("--yaml_file", type=str,  default="/mnt/aix24709/DefFiller/configs/mvtec.yaml", help="paths to base configs.")
 
     parser.add_argument("--base_learning_rate", type=float,  default=5e-5, help="")
     parser.add_argument("--weight_decay", type=float,  default=0.0, help="")

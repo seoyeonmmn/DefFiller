@@ -137,10 +137,19 @@ class DatasetCatalog:
         self.SDsaliencySemantic = {   
             "target": "dataset.dataset_sem.SemanticDataset",
             "train_params":dict(
-                image_rootdir = os.path.join('./DATA/SD-saliency-900/Source_Images'),
-                sem_rootdir = os.path.join('./DATA/SD-saliency-900/Ground_truth'),
-                caption_path = os.path.join('./DATA/SD-saliency-900/caption.json'),
+                image_rootdir = os.path.join('/data/SD-saliency-900/Source_Images'),
+                sem_rootdir = os.path.join('/data/SD-saliency-900/Ground_truth'),
+                caption_path = os.path.join('/data/SD-saliency-900/caption.json'),
             ),
+        }
+
+        self. MVtecSemantic = {
+            "target" : "dataset.dataset_sem.SemanticDataset",
+            "train_params":dict(
+                image_rootdir = os.path.join('/mnt/aix24709/data/DefFiller/Source_Images'),
+                sem_rootdir = os.path.join('/mnt/aix24709/data/DefFiller/Ground_Truth'),
+                caption_path = os.path.join('/mnt/aix24709/data/DefFiller/caption.json')
+            )
         }
 
 

@@ -59,7 +59,7 @@ class SemanticDataset():
 
         
         # Image and normal files 
-        image_files = recursively_read(rootdir=image_rootdir, must_contain="", exts=['bmp'])
+        image_files = recursively_read(rootdir=image_rootdir, must_contain="", exts=['png'])
         image_files.sort()
         sem_files = recursively_read(rootdir=sem_rootdir, must_contain="", exts=['png'])
         sem_files.sort()
@@ -109,11 +109,11 @@ class SemanticDataset():
 
         sem = self.pil_to_tensor(sem)[0,:,:]
 
-        if 'In' in os.path.basename(image_path):
+        if 'color' in os.path.basename(image_path):
             sem = sem/255
-        elif 'Pa' in os.path.basename(image_path):
+        elif 'cut' in os.path.basename(image_path):
             sem = sem/255*2 
-        elif 'Sc' in os.path.basename(image_path):
+        elif 'crack' in os.path.basename(image_path):
             sem = sem/255*3
         
         input_label = torch.zeros(152, self.image_size, self.image_size)
@@ -125,12 +125,12 @@ class SemanticDataset():
 
         # -------------------- caption ------------------- # 
         if random.uniform(0, 1) < self.prob_use_caption:
-            if 'In' in os.path.basename(image_path):
-                out["caption"] = 'inclusion'
-            elif 'Pa' in os.path.basename(image_path):
-                out["caption"] = 'patches'
-            elif 'Sc' in os.path.basename(image_path):
-                out["caption"] = 'scratches'
+            if 'color' in os.path.basename(image_path):
+                out["caption"] = 'color'
+            elif 'cut' in os.path.basename(image_path):
+                out["caption"] = 'cut'
+            elif 'crack' in os.path.basename(image_path):
+                out["caption"] = 'crack'
 
         else:
             out["caption"] = ""
